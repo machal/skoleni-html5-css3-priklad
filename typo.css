@@ -1,0 +1,33 @@
+/*
+   Typografie 
+	 Stylopis pro testovací stránku školení HTML5/CSS
+	 Autor: Martin Michálek, michalek@shortcat.cz
+*/
+
+
+/* Jednotne parametry pisma */
+body,
+input, textarea, select {
+  font: 15px/20px Arial, sans-serif;
+}
+
+/* Nastavime rytmus spodnim odsazenim */
+p, ul, ol, blockquote, table {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+/* U nadpisu bude odsazeni jen polovicni */
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+/* Ponechan spodni rytmus */
+a img {
+  border: 0;
+}
