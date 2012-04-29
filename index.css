@@ -24,13 +24,23 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 0;
-  margin-bottom: 10px;
+  margin-bottom: .5em;
   font-family: Arial, sans-serif;
 }
 
 /* Ponechan spodni rytmus */
 a img {
   border: 0;
+}
+
+/* Barvy */
+a {
+	color: #5FA316;
+}
+
+h1, h2 {
+	color: #999;
+	font-weight: normal;
 }
 
 @media print {
@@ -42,22 +52,14 @@ a img {
 } /* @media print */
 
 
-@media screen {
-	
-	/* --- Layout a zakladni vzhled --- */
+
+@media screen and (min-width: 481px) {
+
+	/* --- Layout a zakladni vzhled pro desktop/tablety --- */
 	
 	body {
 		background: #ccc;
-	}
-	
-	a {
-		color: #5FA316;
-	}
-	
-	h1, h2 {
-		color: #999;
-		font-weight: normal;
-	}
+	}	
 
 	.container {
 		position: relative;
@@ -131,7 +133,7 @@ a img {
 	}
 	
 	
-} /* @media screen */
+} /* @media screen and (min-width: 481px) */
 
 
 
