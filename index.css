@@ -3,7 +3,35 @@
 	 Autor: Martin Michálek, michalek@shortcat.cz
 */
 
-@import "typo.css";
+/* --- Zakladni typografie --- */
+
+/* Jednotne parametry pisma */
+body,
+input, textarea, select {
+  font: 15px/20px Georgia, serif;
+}
+
+/* Nastavime rytmus spodnim odsazenim */
+p, ul, ol, blockquote, table {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+/* U nadpisu bude odsazeni jen polovicni */
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Ponechan spodni rytmus */
+a img {
+  border: 0;
+}
 
 @media print {
 	
@@ -13,9 +41,95 @@
 	
 } /* @media print */
 
+
 @media screen {
 	
+	/* --- Layout a zakladni vzhled --- */
+	
+	body {
+		background: #ccc;
+	}
+	
+	a {
+		color: #5FA316;
+	}
+	
+	h1, h2 {
+		color: #999;
+		font-weight: normal;
+	}
 
+	.container {
+		position: relative;
+		width: 900px;
+		margin: 30px auto;
+		padding-top: 90px;
+		background: #fff;
+	}
+
+	.content {
+		float: left;
+		width: 540px; /* 600px */
+		padding: 0 30px;
+	}
+
+	.side {
+		float: right;
+		width: 240px; /* 300px */
+		padding: 0 30px;
+	}
+
+	.foot {
+		clear: both;
+		padding: 30px;
+		background-color: #eee;
+		color: #999;
+	}
+	
+	.foot p {
+		margin-bottom: 0;
+	}
+
+	.nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 848px; /* 900 */
+		padding: 0 30px 0 22px;
+		background: #333;
+	}
+	
+	.nav h2 {
+		display: none;
+	}
+
+	.nav ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	}  
+
+	.nav li {
+	  display: inline-block;
+	  float: left; /* IE7 */
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.nav a {
+	  display: inline-block;
+	  padding: 20px 10px;
+	  margin-left: -2px;
+	  text-decoration: none;
+	}
+	
+	.nav strong a,
+	.nav a:hover,
+	.nav a:focus,
+	.nav a:active {
+	  color: #fff;
+	}
+	
 	
 } /* @media screen */
 
