@@ -5,5 +5,19 @@
 
 @import "typo.css";
 
+@media print {
+	
+	.nav {
+		display: none;
+	}
+	
+} /* @media print */
+
+@media screen {
+	
+
+	
+} /* @media screen */
+
 
 
