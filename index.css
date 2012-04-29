@@ -16,7 +16,7 @@ p, ul, ol, blockquote, table {
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 
 /* U nadpisu bude odsazeni jen polovicni */
@@ -63,27 +63,28 @@ h1, h2 {
 
 	.container {
 		position: relative;
-		width: 900px;
-		margin: 30px auto;
-		padding-top: 90px;
+		max-width: 1000px;
+		min-width: 700px;
+		margin: 3.3333333333% auto; /* 30/900*100 */
+		padding-top: 6em; /* 90/15 */
 		background: #fff;
 	}
 
 	.content {
 		float: left;
-		width: 540px; /* 600px */
-		padding: 0 30px;
+		width: 60%; /* 540/900*100 */
+		padding: 0 3.3333333333%; /* 30/900*100 */
 	}
 
 	.side {
 		float: right;
-		width: 240px; /* 300px */
-		padding: 0 30px;
+		width: 26.666666667%; /* 240/900*100 */
+		padding: 0 3.3333333333%; /* 30/900*100 */
 	}
 
 	.foot {
 		clear: both;
-		padding: 30px;
+		padding: 3.3333333333%; /* 30/900*100 */
 		background-color: #eee;
 		color: #999;
 	}
@@ -96,8 +97,9 @@ h1, h2 {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 848px; /* 900 */
-		padding: 0 30px 0 22px;
+		width: 94.222222222%; /* 848/900*100 */
+		padding-right: 3.3333333333%; /* 30/900*100 */
+		padding-left: 2.4444444444%; /* 22/900*100 */
 		background: #333;
 	}
 	
@@ -120,7 +122,7 @@ h1, h2 {
 
 	.nav a {
 	  display: inline-block;
-	  padding: 20px 10px;
+	  padding: 1.3333333333em .5em; /* 20/15 10/900*100 */
 	  margin-left: -2px;
 	  text-decoration: none;
 	}
